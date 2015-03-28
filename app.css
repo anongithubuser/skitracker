@@ -20,10 +20,12 @@ html, body {
 	position: absolute;
 	left: -9999px;
 	padding: 20px;
+	display: none;
 }
 
 .sdt-page.in {
 	left: 0;
+	display: block;
 }
 
 .sdt-page.out {
