@@ -130,6 +130,7 @@ ul.sdt-option-list > li.add-new {
 	font-size: 20px;
 	padding-right: 20px;
 	height: 60px;
+	width: 60%;
 }
 
 .sdt-toggle > .active {
