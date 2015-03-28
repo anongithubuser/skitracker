@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget id="com.skidaytracker" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Ski Track</name>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="WebViewBounce" value="false" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="DisallowOverscroll" value="true" />
+
+    <!-- add permissions so android doesn't ask for all of them -->
+    <preference name="permissions" value="none"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+
+    <!-- Splash screens -->
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="1000"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    
+    <preference name="phonegap-version" value="3.5.0" />
+</widget>

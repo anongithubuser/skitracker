@@ -1,0 +1,153 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	color: #444;
+	font-family: Helvetica;
+}
+
+.sdt-app {
+	height: 100%;
+	width: 100%;
+	background: #f4f4f4;
+}
+
+.sdt-page {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: -9999px;
+	padding: 20px;
+}
+
+.sdt-page.in {
+	left: 0;
+}
+
+.sdt-page.out {
+	left: -9999px;
+}
+
+ul.sdt-option-list,
+ul.sdt-detail-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.sdt-option-list > li,
+ul.sdt-detail-list > li {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	border: 5px solid #fff;
+	padding: 20px;
+	height: 70px;
+	margin-bottom: 20px;
+}
+
+ul.sdt-option-list > li:first-child,
+ul.sdt-detail-list > li:first-child {
+	margin-top: 0;
+}
+
+.sdt-option-heading {
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+
+.sdt-option-value {
+	font-size: 20px;
+	float: right;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+ul.sdt-option-list > li.add-new {
+	border-style: dashed;
+	border-color: #999;
+	color: #888;
+}
+
+.sdt-toggle {
+	background: white;
+	width: 100%;
+	margin-bottom: 20px;
+	height: 70px;
+}
+
+.sdt-toggle > .left-value, .sdt-toggle > .right-value {
+	border: 1px solid #ddd;
+	padding-top: 27px;
+	box-sizing: border-box;
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+.sdt-toggle > .left-value {
+	border-right: none;
+}
+
+.sdt-ski-input {
+	height: 60px;
+	background: white;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.sdt-ski-input:last-child {
+	margin-bottom: 0;
+}
+
+.sdt-ski-input div {
+	font-size: 20px;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+}
+
+.sdt-input {
+	border: none;
+	float: right;
+	text-align: right;
+	font-size: 20px;
+	padding-right: 20px;
+	height: 60px;
+}
+
+.sdt-toggle > .active {
+	background: red;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sdt-subtle {
+	color: #999;
+	font-weight: normal;
+}
+
+.sdt-btn {
+	width: 100%;
+	height: 60px;
+	font-size: 20px;
+	background: blue;
+	color: white;
+}

@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<script src='bower_components/jquery/dist/jquery.min.js'></script>
+		<script src='bower_components/underscore/underscore-min.js'></script>
+		<script src='bower_components/backbone/backbone.js'></script>
+		<script src='bower_components/backbone.localStorage/backbone.localStorage-min.js'></script>
+
+		<link rel='stylesheet' href='app.css'>
+	</head>
+	<body class="sdt-app">
+
+		<!-- Day Selector -->
+		<div class="sdt-page in" id="home">
+
+			<script type="text/template" id="skiDayTemplate">
+				<span class="sdt-option-heading clearfix"><%= title %></span>
+				<span class="sdt-option-value clearfix"><%= participantsCount %></span>
+			</script>
+
+			<h1>Ski Days</h1>
+
+			<ul class="sdt-option-list" id="ski-day-list"></ul>
+			<ul class="sdt-option-list" id="ski-day-list">
+				<li class="add-new add-new-ski-day"><span class="sdt-option-heading">+ Start New Day</span></li>
+			</ul>
+		</div>
+
+		<!-- Skier Selector -->
+		<div id="skiers" class="sdt-page">
+			<script type="text/template" id="skierTemplate">
+				<span class="sdt-option-heading"><%= name %></span>
+				<span class="sdt-option-value">$<%= totalPayable %></span>
+			</script>
+
+			<h1>Skiers</h1>
+
+			<div class="sdt-toggle clearfix">
+				<div class="left-value active js-green-boat-picker">Green Boat</div>
+				<div class="right-value js-white-boat-picker">White Boat</div>
+			</div>
+
+			<ul id="skier-list" class="sdt-option-list"></ul>
+
+			<ul class="sdt-option-list">
+				<li class="add-new"><span class="sdt-option-heading">+ Add New Skier</span></li>
+			</ul>
+
+			<button class="sdt-btn back">Back</button>
+		</div>
+
+		<!-- Skier Details -->
+		<div id="skier" class="sdt-page">
+			<h1 class="js-name"></h1>
+
+			<div class="sdt-toggle clearfix">
+				<div class="left-value active js-is-member-picker">Member</div>
+				<div class="right-value js-is-non-member-picker">Non-member</div>
+			</div>
+
+			<div class="sdt-ski-input">
+				<div>Num Skis</div>
+				<input class="sdt-input js-num-skis" type="number" placeholder="0">
+			</div>
+
+			<div class="sdt-ski-input">
+				<div>Equipment</div>
+				<input class="sdt-input js-num-equip" type="number" placeholder="0">
+			</div>
+
+			<div class="sdt-ski-input">
+				<div>Guests</div>
+				<input class="sdt-input js-num-guests" type="number" placeholder="0">
+			</div>
+
+			<div class="sdt-ski-input">
+				<div>Discount</div>
+				<input class="sdt-input js-discount" type="number" placeholder="0">
+			</div>
+
+			<button class="sdt-btn back">Back</button>
+		</div>
+
+		<script src="models/participant.js"></script>
+		<script src="models/skiDay.js"></script>
+		<script src="collections/Participants.js"></script>
+		<script src="collections/SkiDays.js"></script>
+		<script src="views/ski-day-item-view.js"></script>
+		<script src="views/skier-item-view.js"></script>
+		<script src='app.js'></script>
+
+	</body>
+</html>
